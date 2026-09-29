@@ -1,0 +1,38 @@
+{
+  "topic_claims": {
+    "type": "noul",
+    "instructions": "A healthcare claim is mentioned, even briefly or as context for another issue. This includes claim status, denial, processing, reprocessing, coordination of benefits, payment outcome, deductible, copay, coinsurance, or member responsibility tied to a claim. Return false only when no claim is discussed."
+  },
+  "topic_prior_authorization": {
+    "type": "noul",
+    "instructions": "Prior authorization is mentioned, even briefly or as context for another issue. This includes authorization status, approval, denial, missing documentation, clinical review, additional visits or services requiring authorization, or next steps. Return false only when prior authorization is not discussed."
+  },
+  "topic_eligibility_benefits": {
+    "type": "noul",
+    "instructions": "Eligibility, coverage, or plan benefits are mentioned, even briefly or only to explain a claim, prior authorization, or bill. This includes covered services, benefit limits, copays, deductibles, or coinsurance. Return false only when none of these are discussed."
+  },
+  "topic_provider_network": {
+    "type": "noul",
+    "instructions": "A provider search or network status is mentioned, even briefly or as context for another issue. This includes whether a provider is in-network, out-of-network, available, or accepting patients. Return false only when provider search or network status is not discussed."
+  },
+  "topic_billing_payment": {
+    "type": "noul",
+    "instructions": "Billing or payment is mentioned, even briefly or while explaining a claim. This includes paying a bill, premium payment, balance collection, refund, payment method, or a billing error. Return false only when billing or payment is not discussed."
+  },
+  "topic_account_contact_update": {
+    "type": "noul",
+    "instructions": "Account or contact information is mentioned, even briefly. This includes mailing address, residential address, phone number, email, communication preferences, demographic information, or other contact information. Return false only when account or contact information is not discussed."
+  },
+  "topic_appeal_grievance": {
+    "type": "noul",
+    "instructions": "An appeal, grievance, or formal complaint is mentioned, even briefly. General frustration, disagreement, or dissatisfaction alone does not count. Return false only when no appeal, grievance, or formal complaint is discussed."
+  },
+  "topic_care_management": {
+    "type": "noul",
+    "instructions": "Care coordination, case management, care-management outreach, or managing an ongoing condition is mentioned, even briefly. Ordinary mention of a visit or treatment does not count. Return false only when care management is not discussed."
+  },
+  "topic_other": {
+    "type": "noul",
+    "instructions": "The caller has another customer-service need, even a brief one, that is not covered by claims, prior authorization, eligibility or benefits, provider network, billing or payment, account or contact updates, appeals or grievances, or care management."
+  }
+}

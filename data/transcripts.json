@@ -1,0 +1,367 @@
+[
+  {
+    "id": "call_001",
+    "title": "Claim denial",
+    "metadata": {
+      "agent_id": "AGT-1842",
+      "member_id": "HHP-4827165",
+      "call_date": "2026-09-08",
+      "duration_seconds": 742
+    },
+    "crm_context": {
+      "member_name": "Elena Morris",
+      "plan_name": "HarborPlus Silver PPO",
+      "claim_id": "CLM-260814-7732",
+      "date_of_service": "2026-08-14",
+      "known_providers": [
+        "Pine Harbor Family Clinic"
+      ],
+      "billed_amount_usd": 286.0,
+      "denial_code": "COB-12",
+      "denial_description": "Coordination-of-benefits information requires review",
+      "open_cases": []
+    },
+    "transcript": [
+      "AGENT: Thank you for calling HarborPoint Health Plan. This is Maya. How may I help you today?",
+      "CALLER: I received another denial notice, and I have already called twice about this claim. [frustrated]",
+      "AGENT: I understand why that would be frustrating. I will review the claim and the earlier notes with you. [calm]",
+      "CALLER: It is for my regular doctor visit in August, and now the clinic says the full amount is due next week.",
+      "AGENT: I can look into that. May I have your member ID and full name?",
+      "CALLER: The member ID is HHP-4827165, and my name is Elena Morris.",
+      "AGENT: Thank you. For verification, please confirm your date of birth and ZIP code.",
+      "CALLER: February 11, 1987, and the ZIP code is 44118.",
+      "AGENT: Thank you, Ms. Morris. I have verified your account.",
+      "CALLER: The denial letter is dated August 27 if that helps.",
+      "AGENT: I found claim CLM-260814-7732 from Pine Harbor Family Clinic for the August 14 office visit.",
+      "CALLER: Yes, that is the one.",
+      "AGENT: The claim was denied because our system still showed another health plan as your primary coverage on the date of service.",
+      "CALLER: I do not have another plan. That coverage ended last December. [confused]",
+      "AGENT: I see that you reported the old plan ending, but the termination date was saved in the notes and not applied to the coordination-of-benefits record. [calm]",
+      "CALLER: Does that mean my visit was not covered? [worried]",
+      "AGENT: No. Your plan was active, the provider is in network, and the office visit is a covered benefit. The denial resulted from the outdated record.",
+      "CALLER: What needs to happen to fix it?",
+      "AGENT: I corrected the other-insurance end date to December 31, 2025, and reran the claim while we were speaking.",
+      "CALLER: Do I need to pay the clinic while that is happening?",
+      "AGENT: The claim has now processed as covered. The plan allowed 164 dollars, paid 134 dollars, and assigned your normal 30-dollar office-visit copay. You do not owe the denied amount of 286 dollars.",
+      "CALLER: Is there anything you need me to do?",
+      "AGENT: I do not need any documents from you. Please keep the correction reference, and pay only the 30-dollar copay when the clinic issues its corrected statement.",
+      "CALLER: What should I tell them if their system still shows the old balance?",
+      "AGENT: Give them claim ID CLM-260814-7732 and today's correction reference. The corrected remittance was generated automatically with the adjusted claim.",
+      "CALLER: Do I have to call back for someone to approve it?",
+      "AGENT: No escalation, additional approval, or follow-up with us is required. Call us only if the revised explanation of benefits does not appear within two business days.",
+      "CALLER: Will the clinic get the corrected result automatically?",
+      "AGENT: Yes. The corrected remittance is already available to Pine Harbor Family Clinic through its electronic claims system.",
+      "CALLER: That is a relief. I thought I had lost coverage without knowing it. [relieved]",
+      "AGENT: Your coverage is active. Your reference number for today's correction is SR-90618.",
+      "CALLER: Thank you for explaining what happened and fixing the record.",
+      "AGENT: You are welcome. Is there anything else I can help you with today?",
+      "CALLER: No, that was everything.",
+      "AGENT: Thank you for calling HarborPoint Health Plan. Have a good afternoon."
+    ],
+    "agent_notes": "Corrected the COB record: other insurance ended 12/31/2025, then reran CLM-260814-7732. Claim processed as covered; member owes the $30 office-visit copay, not $286. Correction ref SR-90618. Pine Harbor already has the remittance. No callback.",
+    "expected": {
+      "topics": [
+        "claim_denial"
+      ],
+      "resolved": true,
+      "follow_up_required": false,
+      "escalation_required": false,
+      "urgency": "medium",
+      "commitment_made": false
+    }
+  },
+  {
+    "id": "call_002",
+    "title": "Prior authorization",
+    "metadata": {
+      "agent_id": "AGT-2077",
+      "member_id": "HHP-9352048",
+      "call_date": "2026-09-16",
+      "duration_seconds": 901
+    },
+    "crm_context": {
+      "member_name": "Marcus Bennett",
+      "plan_name": "HarborPlus Gold HMO",
+      "prior_authorization_id": "PA-26498117",
+      "known_providers": [
+        "Northwind Orthopedic Center",
+        "Dr. Lila Chen"
+      ],
+      "procedure": "outpatient knee arthroscopy",
+      "scheduled_date": "2026-09-21",
+      "authorization_status": "pending clinical information",
+      "missing_information": [
+        "recent examination notes",
+        "summary of conservative treatment"
+      ]
+    },
+    "transcript": [
+      "AGENT: Thank you for calling HarborPoint Health Plan. This is Daniel. How can I assist you?",
+      "CALLER: My knee procedure is Monday, and the surgery center says the authorization is still pending. I am worried they will cancel it. [worried]",
+      "AGENT: I can understand why the timing is concerning. I will check the authorization and see what is holding it up. [calm]",
+      "CALLER: Thank you. The doctor's office told me they sent everything last week.",
+      "AGENT: May I have your member ID and full name?",
+      "CALLER: It is HHP-9352048, Marcus Bennett.",
+      "AGENT: Please confirm your date of birth and current address for verification.",
+      "CALLER: June 23, 1974, and 88 Larkspur Avenue, Fairhaven, Ohio 44091.",
+      "AGENT: Thank you. I found prior authorization PA-26498117 for an outpatient knee arthroscopy at Northwind Orthopedic Center on September 21.",
+      "CALLER: That is correct. What does pending actually mean here?",
+      "AGENT: The utilization review team received the request, but it is missing the most recent examination notes and a summary of the treatment you tried before surgery.",
+      "CALLER: Nobody told me anything was missing, and we are only five days away. [frustrated]",
+      "AGENT: The record shows a request was faxed to Dr. Lila Chen's office yesterday morning, but no additional documents have arrived yet.",
+      "CALLER: If this is not handled by Friday, the center will give my appointment to someone else. [worried]",
+      "AGENT: I am routing this to our urgent utilization-management queue because the procedure is scheduled within five calendar days. [calm]",
+      "CALLER: Does that mean it can be approved today?",
+      "AGENT: I cannot guarantee approval today. A nurse reviewer still needs the missing clinical information before making a decision.",
+      "CALLER: What can I do to keep this moving?",
+      "AGENT: Please call Dr. Chen's office today and ask them to fax the recent examination notes and conservative-treatment summary to 555-014-8820 with PA-26498117 on every page.",
+      "CALLER: Can you contact the office too?",
+      "AGENT: Yes. I am sending the office a secure document request now and marking it urgent due to the scheduled procedure date.",
+      "CALLER: I appreciate that.",
+      "AGENT: I have also escalated the pending request to the utilization-management intake lead for same-day review when the documents arrive.",
+      "CALLER: The surgery center told me they need a decision by noon Friday.",
+      "AGENT: I added the Friday noon deadline and the risk of cancellation to the authorization notes.",
+      "CALLER: How will I know whether the paperwork gets there?",
+      "AGENT: I will check the authorization by 3:00 PM tomorrow and call you at the number ending in 6624 with a status update, even if the documents are still missing.",
+      "CALLER: Could you also send a message through the portal in case I miss the call?",
+      "AGENT: Yes. With your permission, I will send the same update to your secure member inbox.",
+      "CALLER: You have my permission.",
+      "AGENT: Thank you. I have documented that preference and the follow-up commitment.",
+      "CALLER: If the doctor's office says they already faxed it, what should I ask them for?",
+      "AGENT: Ask for the fax confirmation page and verify that the authorization ID appears on the submission. That will help us locate it quickly.",
+      "CALLER: I am still nervous, but at least I know what is missing and who is reviewing it. [worried]",
+      "AGENT: Your escalation reference is UM-77104. The authorization is not approved yet, so please keep the appointment tentative until you receive our update.",
+      "CALLER: I will call Dr. Chen's office as soon as we hang up.",
+      "AGENT: Thank you, Mr. Bennett. I will follow up by 3:00 PM tomorrow by phone and secure message.",
+      "CALLER: Thank you. I will watch for your update.",
+      "AGENT: You are welcome. Thank you for calling HarborPoint Health Plan."
+    ],
+    "agent_notes": "PA-26498117 still pending missing exam notes and conservative-treatment summary from Dr. Chen. Routed to urgent UM (UM-77104) for the 9/21 knee arthroscopy. Sent an urgent document request. I will call 6624 and send a portal message by 3:00 PM tomorrow. Member will call the office today.",
+    "expected": {
+      "topics": [
+        "prior_authorization"
+      ],
+      "resolved": false,
+      "follow_up_required": true,
+      "escalation_required": true,
+      "urgency": "high",
+      "commitment_made": true
+    }
+  },
+  {
+    "id": "call_003",
+    "title": "Multiple topics",
+    "metadata": {
+      "agent_id": "AGT-1536",
+      "member_id": "HHP-6173902",
+      "call_date": "2026-09-19",
+      "duration_seconds": 1084
+    },
+    "crm_context": {
+      "member_name": "Priya Desai",
+      "plan_name": "HarborPlus Choice EPO",
+      "claim_id": "CLM-260902-1846",
+      "prior_authorization_id": "PA-26511309",
+      "known_providers": [
+        "Lakeview Diagnostic Group",
+        "Maple Bridge Rehabilitation"
+      ],
+      "procedure": "additional physical therapy visits",
+      "contact_record": {
+        "mailing_address": "14 Cedar Run, Glenhaven, Ohio 44103",
+        "phone_last_four": "1189"
+      }
+    },
+    "transcript": [
+      "AGENT: Thank you for calling HarborPoint Health Plan. This is Sofia. What can I help you with today?",
+      "CALLER: I moved recently and need to change my mailing address, and I also have a couple of questions about a claim.",
+      "AGENT: We can take care of the contact update first and then review the claim.",
+      "CALLER: Perfect. My new address is 14 Cedar Run, Glenhaven, Ohio 44103.",
+      "AGENT: Before I make the change, may I verify your name, member ID, and date of birth?",
+      "CALLER: Priya Desai, member ID HHP-6173902, and my birthday is November 5, 1991.",
+      "AGENT: Thank you. I have 27 Willow Court as the old address. Should 14 Cedar Run become both your mailing and residential address?",
+      "CALLER: Yes, please use it for both.",
+      "AGENT: The address is updated effective today, and future plan mail will go to Cedar Run.",
+      "CALLER: Great. The claim question is about a lab bill from Lakeview Diagnostic Group.",
+      "AGENT: Do you have the claim ID or the date of service?",
+      "CALLER: The claim ID is CLM-260902-1846, and the service was September 2.",
+      "AGENT: I found it. Lakeview billed 310 dollars, the plan discount was 125 dollars, and the remaining 185 dollars was applied to your deductible.",
+      "CALLER: I thought routine lab work was covered, so why did I get a bill? [confused]",
+      "AGENT: Preventive lab tests ordered as part of an annual preventive visit are covered before the deductible. This claim was submitted as diagnostic monitoring, which follows your diagnostic-lab benefit.",
+      "CALLER: I am not sure I understand the difference. [confused]",
+      "AGENT: In plain terms, the provider reported that the test was checking an existing concern rather than screening for a problem when you had no symptoms.",
+      "CALLER: So the 185 dollars is actually my responsibility?",
+      "AGENT: Yes, based on how the provider billed it and your remaining deductible. The claim was processed correctly and was not denied.",
+      "CALLER: All right, that makes more sense. [relieved]",
+      "AGENT: Is there another question I can review for you?",
+      "CALLER: Yes. Since we are already looking at my account, my physical therapist said the next set of visits needs authorization.",
+      "AGENT: What is the provider's name, and when is your next visit?",
+      "CALLER: Maple Bridge Rehabilitation, and my next appointment is September 26.",
+      "AGENT: I found prior authorization PA-26511309 for six additional physical therapy visits.",
+      "CALLER: Does that mean the visits are approved?",
+      "AGENT: The first six visits were approved and used. The request for six more is pending because the therapist's progress notes and requested visit frequency have not arrived.",
+      "CALLER: They told me they sent the request on Monday. [frustrated]",
+      "AGENT: I see the request form, but not the supporting notes. I have sent Maple Bridge a reminder that lists the missing items. [calm]",
+      "CALLER: How long will the review take after they send the notes?",
+      "AGENT: This is time-sensitive, but it remains in the standard queue because your appointment is seven days away. Review takes two business days after we receive all required information, so there is still time if they respond promptly.",
+      "CALLER: Should I call the therapist too?",
+      "AGENT: Yes. Please ask the office to fax the progress notes and visit frequency to 555-014-8820 and include PA-26511309 on each page.",
+      "CALLER: Will you let me know if nothing arrives?",
+      "AGENT: I will check the request in two business days and send a secure portal message with the status. The additional visits are not approved yet.",
+      "CALLER: I just remembered that my mobile number changed too.",
+      "AGENT: I can update that now. What is the new number?",
+      "CALLER: It is 555-013-7742.",
+      "AGENT: Your mobile number has been updated, and I left text notifications enabled as you requested previously.",
+      "CALLER: Can you recap everything so I know I did not miss a step?",
+      "AGENT: Your address and phone number are updated, the lab claim was correctly applied to your deductible, and I sent Maple Bridge a request for the missing authorization documents.",
+      "CALLER: The account changes and claim are clear now. I just need to make sure the therapist sends those notes. [relieved]",
+      "AGENT: Correct. You will call Maple Bridge, and I will send you an authorization update within two business days. Your call reference is SR-92145.",
+      "CALLER: Thank you for handling all three things in one call.",
+      "AGENT: You are welcome, Ms. Desai. Thank you for calling HarborPoint Health Plan."
+    ],
+    "agent_notes": "Updated mailing/residential address to 14 Cedar Run and mobile to 555-013-7742. Explained CLM-260902-1846: diagnostic labs applied $185 to the deductible, not a denial. PA-26511309 for more PT visits is pending Maple Bridge progress notes; reminder sent. Portal status in two business days. Ref SR-92145.",
+    "expected": {
+      "topics": [
+        "contact_information_update",
+        "claim_explanation",
+        "prior_authorization"
+      ],
+      "resolved": false,
+      "follow_up_required": true,
+      "escalation_required": false,
+      "urgency": "medium",
+      "commitment_made": true
+    }
+  },
+  {
+    "id": "call_004",
+    "title": "Eligibility and benefits",
+    "metadata": {
+      "agent_id": "AGT-2214",
+      "member_id": "HHP-7401853",
+      "call_date": "2026-09-18",
+      "duration_seconds": 688
+    },
+    "crm_context": {
+      "member_name": "Jordan Hale",
+      "plan_name": "HarborPlus Bronze PPO",
+      "known_providers": [
+        "Westfield Dermatology"
+      ],
+      "remaining_deductible_usd": 420.0,
+      "specialist_copay_usd": 45.0,
+      "annual_deductible_usd": 1500.0
+    },
+    "transcript": [
+      "AGENT: Thank you for calling HarborPoint Health Plan. This is Priya. How may I help you today?",
+      "CALLER: I need to understand what my plan actually covers before I book a dermatology visit.",
+      "AGENT: I can review your benefits. May I have your member ID and full name?",
+      "CALLER: HHP-7401853, Jordan Hale.",
+      "AGENT: Thank you. Please confirm your date of birth and ZIP code.",
+      "CALLER: March 4, 1990, and 44120.",
+      "AGENT: Thank you, I have verified your HarborPlus Bronze PPO account.",
+      "CALLER: How much of my deductible is left this year?",
+      "AGENT: Your annual medical deductible is 1,500 dollars. You have 420 dollars remaining.",
+      "CALLER: So if I see a specialist this month, do I pay the whole visit? [confused]",
+      "AGENT: After the deductible is met, in-network specialist visits have a 45-dollar copay. Until then, you pay the plan-allowed amount toward the remaining 420 dollars.",
+      "CALLER: The office is Westfield Dermatology. Are they in network?",
+      "AGENT: Yes. Westfield Dermatology is in network for your PPO.",
+      "CALLER: They also offered a video visit if I cannot get there next week.",
+      "AGENT: Telehealth with an in-network specialist follows the same specialist benefit. The 45-dollar copay applies once the deductible is met.",
+      "CALLER: What if they want a biopsy during the visit?",
+      "AGENT: An office visit is covered as I described. A biopsy is billed separately as a procedure and would apply to the deductible unless it is coded as preventive, which a diagnostic biopsy is not.",
+      "CALLER: I do not want a surprise bill. [worried]",
+      "AGENT: Ask the office to confirm they will bill as an in-network specialist visit, and to tell you in advance if they expect to perform a biopsy.",
+      "CALLER: Is a referral required?",
+      "AGENT: No referral is required for an in-network specialist on the Bronze PPO.",
+      "CALLER: Can you send me a summary of what you just told me?",
+      "AGENT: Yes. I am sending a benefits summary to your secure member inbox now, including the remaining deductible and the specialist copay.",
+      "CALLER: I do not need anyone to call me back.",
+      "AGENT: Understood. No follow-up is required. Your reference is SR-91822.",
+      "CALLER: That answers it. Thank you. [relieved]",
+      "AGENT: You are welcome. Is there anything else I can help you with today?",
+      "CALLER: No, that is all.",
+      "AGENT: Thank you for calling HarborPoint Health Plan."
+    ],
+    "agent_notes": "Reviewed HarborPlus Bronze PPO: $420 remaining of the $1,500 deductible; $45 in-network specialist copay after deductible. Westfield Dermatology is in network; no referral needed. Sent benefits summary to the secure inbox. Ref SR-91822. Member declined a callback.",
+    "expected": {
+      "topics": [
+        "eligibility_benefits"
+      ],
+      "resolved": true,
+      "follow_up_required": false,
+      "escalation_required": false,
+      "urgency": "low",
+      "commitment_made": false
+    }
+  },
+  {
+    "id": "call_005",
+    "title": "Appeal and grievance",
+    "metadata": {
+      "agent_id": "AGT-1960",
+      "member_id": "HHP-3186720",
+      "call_date": "2026-09-21",
+      "duration_seconds": 964
+    },
+    "crm_context": {
+      "member_name": "Camila Ortiz",
+      "plan_name": "HarborPlus Gold PPO",
+      "claim_id": "CLM-260905-4410",
+      "date_of_service": "2026-09-05",
+      "known_providers": [
+        "Riverside Imaging Center",
+        "Dr. Nathan Cole"
+      ],
+      "procedure": "lumbar MRI",
+      "denial_code": "MED-8",
+      "denial_description": "Medical necessity not established from submitted clinical notes",
+      "appeal_id": "APL-260921-044",
+      "billed_amount_usd": 1840.0
+    },
+    "transcript": [
+      "AGENT: Thank you for calling HarborPoint Health Plan. This is Andre. How can I assist you?",
+      "CALLER: I want to formally appeal the denial of my MRI. The letter said it was not medically necessary, and that is not true. [frustrated]",
+      "AGENT: I can start a formal appeal for you. Let me pull the decision first. May I have your member ID and name?",
+      "CALLER: HHP-3186720, Camila Ortiz.",
+      "AGENT: Please confirm your date of birth and the last four digits of your phone number.",
+      "CALLER: September 19, 1982, and 4401.",
+      "AGENT: Thank you. I found claim CLM-260905-4410 for a lumbar MRI at Riverside Imaging Center on September 5.",
+      "CALLER: Yes. Dr. Nathan Cole ordered it after six weeks of physical therapy did not help.",
+      "AGENT: The claim was denied under MED-8 because the clinical notes on file did not establish medical necessity for the MRI.",
+      "CALLER: I already completed therapy. I do not want another review that just repeats the same denial. [frustrated]",
+      "AGENT: A formal appeal is different from a reconsideration note. It is reviewed by a clinician who was not the original reviewer.",
+      "CALLER: Then I want that appeal filed today.",
+      "AGENT: I can open the appeal now. I will need you to confirm you are requesting a first-level member appeal of the September 5 MRI denial.",
+      "CALLER: I confirm that. Please file it.",
+      "AGENT: Appeal APL-260921-044 is now open. The standard decision window is 30 calendar days from today.",
+      "CALLER: What do you still need from me?",
+      "AGENT: The appeal is stronger if we have the therapy progress notes and Dr. Cole's order. I can request those from the office, but you can also upload them to the portal.",
+      "CALLER: Please request them, and I will upload what I have tonight.",
+      "AGENT: I am sending Riverside Imaging and Dr. Cole a records request for the therapy notes and the MRI order, referenced to APL-260921-044.",
+      "CALLER: Can I keep the September 28 MRI appointment while this is pending? [worried]",
+      "AGENT: You may keep it, but the appeal is not an approval. If you have the scan before a decision, you could be billed the 1,840-dollar allowed amount.",
+      "CALLER: That is not acceptable. I need someone who can actually decide this faster. [frustrated]",
+      "AGENT: I am marking the appeal as time-sensitive because of the scheduled scan, and I am routing it to the appeals intake lead for an expedited screening.",
+      "CALLER: What does expedited mean in days, not jargon?",
+      "AGENT: If the screening agrees the delay could worsen your condition, the decision target becomes 72 hours after we have the clinical records. If not, it stays on the 30-day timeline.",
+      "CALLER: Will someone call me either way?",
+      "AGENT: Yes. I will call you at the number ending in 4401 by 4:00 PM tomorrow with whether the expedited screening was accepted, and I will send the same update to your secure inbox.",
+      "CALLER: You have my permission to leave a voicemail.",
+      "AGENT: Documented. Your appeal number is APL-260921-044. Please upload the therapy notes tonight if you have them.",
+      "CALLER: I will. Thank you for actually filing it instead of telling me to wait. [relieved]",
+      "AGENT: You are welcome, Ms. Ortiz. Thank you for calling HarborPoint Health Plan."
+    ],
+    "agent_notes": "Opened first-level appeal APL-260921-044 for the MED-8 denial of CLM-260905-4410 (lumbar MRI 9/5). Requested therapy notes and Dr. Cole's order; member will upload tonight. Marked time-sensitive for the 9/28 appointment and sent to appeals intake for expedited screening. I will call 4401 and send a portal update by 4:00 PM tomorrow.",
+    "expected": {
+      "topics": [
+        "appeal_grievance"
+      ],
+      "resolved": false,
+      "follow_up_required": true,
+      "escalation_required": true,
+      "urgency": "high",
+      "commitment_made": true
+    }
+  }
+]

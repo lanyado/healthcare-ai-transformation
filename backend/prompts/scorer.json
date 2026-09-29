@@ -1,0 +1,32 @@
+{
+  "sentiment": {
+    "type": "score",
+    "instructions": "How positive or negative is the caller's emotional sentiment during this focused topic? Evaluate emotion, not urgency.",
+    "criteria": [
+      "Strongly negative: angry, crying, highly distressed, hostile, or extremely frustrated.",
+      "Negative: worried, frustrated, disappointed, upset, or dissatisfied.",
+      "Neutral or mixed: primarily factual, calm, uncertain, or containing balanced positive and negative emotion.",
+      "Positive: reassured, appreciative, satisfied, calmer, or relieved.",
+      "Strongly positive: very relieved, highly satisfied, enthusiastic, or strongly appreciative."
+    ]
+  },
+  "resolved": {
+    "type": "noul",
+    "instructions": "By the end of the call, the issue in this focused topic is fully resolved and no additional action is required before the issue itself can be considered resolved."
+  },
+  "urgency": {
+    "type": "score",
+    "instructions": "How operationally time-sensitive is this focused topic? Judge concrete deadlines and consequences of delay, not the caller's emotional tone.",
+    "criteria": [
+      "No meaningful urgency: no deadline or material consequence from waiting.",
+      "Low urgency: timely handling is useful, but waiting several days is unlikely to create a meaningful consequence.",
+      "Moderate urgency: there is an upcoming appointment, deadline, financial consequence, or service dependency.",
+      "High urgency: delay could soon cause cancellation, loss of access to care, missed treatment, or significant financial impact.",
+      "Critical urgency: immediate action is required because delay creates an imminent serious healthcare, safety, or access consequence."
+    ]
+  },
+  "compliance_concern": {
+    "type": "noul",
+    "instructions": "The conversation contains evidence of a potential healthcare customer-service compliance, privacy, authorization, disclosure, or required-process concern."
+  }
+}

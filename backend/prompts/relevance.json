@@ -1,0 +1,6 @@
+{
+  "healthcare_call": {
+    "type": "noul",
+    "instructions": "This text is a spoken health-plan member-services call, or a clear transcript of one. True when a caller and an agent discuss a member's claim, denial, eligibility, benefits, prior authorization, billing, appeal, grievance, provider network, or account update. Short HarborPoint-style openings and callbacks about an unfinished healthcare issue still count. A member ID is not required. Do not reject because the transcript contains names, member IDs, or other PHI. Return false when it is not a call transcript, was uploaded by accident, or is unrelated to health-plan member services: recipes, homework, news, sales notes, clinical charts with no caller and agent, benefit manuals, or another industry."
+  }
+}

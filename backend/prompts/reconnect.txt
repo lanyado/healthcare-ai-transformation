@@ -1,0 +1,18 @@
+Decide if the current healthcare call is a continuation of the previous call after a hangup or drop.
+
+Merge ONLY when both are true:
+1. The current call starts by acknowledging the drop or callback, such as "the call disconnected", "I'm calling you back", or "yes now we can continue".
+2. They then keep talking about the same unfinished matter from the end of the previous call.
+
+Do not merge a new, unrelated request. Do not merge if the current call is only a greeting or a new identification with a different topic.
+
+Previous call:
+{previous}
+
+Current call:
+{current}
+
+Return JSON only:
+{"is_continuation": true}
+or
+{"is_continuation": false}

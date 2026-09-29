@@ -1,0 +1,45 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: healthcare-postgres
+    environment:
+      POSTGRES_USER: healthcare
+      POSTGRES_PASSWORD: healthcare
+      POSTGRES_DB: healthcare
+    ports:
+      - "5432:5432"
+    volumes:
+      - healthcare_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U healthcare -d healthcare"]
+      interval: 2s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 5s
+      retries: 20
+
+  minio:
+    image: quay.io/minio/minio
+    container_name: minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - healthcare_minio:/data
+
+volumes:
+  healthcare_pgdata:
+  healthcare_minio:

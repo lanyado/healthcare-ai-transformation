@@ -1,0 +1,12 @@
+Write a short CRM summary of this healthcare call topic for the agent.
+
+Rules:
+- 1 or 2 sentences only
+- Cover only the {topic} topic
+- Use only the transcript; do not invent facts
+- Do not mention scores, confidence, or member IDs
+- Do not use markdown or a heading
+- Return plain text only
+
+Transcript:
+{transcript}
